@@ -15,7 +15,7 @@
     "start": "webpack-serve --config ./webpack.serve.config.js --open",
     "validate-init": "python _validate_init.py",
     "prepublishOnly": "npm run validate-init",
-    "build:js": "webpack --mode production",
+    "build:js": "webpack",
     "build:backends": "dash-generate-components ./src/lib/components dash_tvlwc -p package-info.json --r-prefix '' --jl-prefix '' --ignore \\.test\\.",
     "build:backends-activated": "(. venv/bin/activate || venv\\scripts\\activate && npm run build:py_and_r)",
     "build": "npm run build:js && npm run build:backends",
@@ -24,7 +24,7 @@
   "author": "Kwan Yu, WU <wukwanyutyson@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lightweight-charts": "^5.0.0"
+    "lightweight-charts": "^5.x.x"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",

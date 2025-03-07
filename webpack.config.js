@@ -59,11 +59,18 @@ module.exports = (env, argv) => {
         module: {
             rules: [
                 {
-                    test: /\.jsx?$/,
-                    exclude: /node_modules/,
+                    test: /\.m?js$/,
+                    // We'll handle includes below
+                    // or exclude: /node_modules\/(?!(lightweight-charts)\/).*/,
                     use: {
                         loader: 'babel-loader',
-                    },
+                        options: {
+                            presets: [
+                                '@babel/preset-env',
+                                '@babel/preset-react'
+                            ]
+                        }
+                    }
                 },
                 {
                     test: /\.css$/,
