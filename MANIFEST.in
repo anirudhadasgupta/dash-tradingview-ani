@@ -1,5 +1,5 @@
-include dash_tvlwc/dash_tvlwc.min.js
-include dash_tvlwc/dash_tvlwc.min.js.map
+include dash_tvlwc/dash_tvlwc.dev.js
+include dash_tvlwc/dash_tvlwc.dev.js.map
 include dash_tvlwc/async-*.js
 include dash_tvlwc/async-*.js.map
 include dash_tvlwc/*-shared.js
