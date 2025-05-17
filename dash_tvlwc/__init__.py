@@ -66,6 +66,10 @@ _js_dist.extend(
 _js_dist.extend(
     [
         {
+            'relative_package_path': 'lightweight-charts-loader.js',
+            'namespace': package_name
+        },
+        {
             'relative_package_path': 'dash_tvlwc.dev.js',
     'external_url': 'https://unpkg.com/{0}@{2}/{1}/{1}.dev.js'.format(
                 package_name, __name__, __version__),
